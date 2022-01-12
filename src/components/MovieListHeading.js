@@ -1,10 +1,9 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const MovieListHeading = (probs) => {
+const MovieListHeading = (props) => {
     return (
         <div className='col'>
-            <h1> {probs.heading} </h1>
+            <h1> {props.heading} </h1>
         </div>
     );
 };

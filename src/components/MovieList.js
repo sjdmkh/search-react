@@ -1,18 +1,18 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const MovieList = (probs) => {
-    const FavouriteComponent = probs.favouriteComponent;
+const MovieList = (props) => {
+    const FavouriteComponent = props.favouriteComponent;
+
     return (
         <>
-            {probs.movies.map((movie, index) => (
+            {props.movies.map((movie, index) => (
                 <div className='image-container d-flex justify-content-start m-3'>
-                    <img src={movie.Poster} alt='movie' />
+                    <img src={movie.Poster} alt='movie'></img>
                     <div
-                        onClick={() => probs.handleFavouritesClick(movie)}
+                        onClick={() => props.handleFavouritesClick(movie)}
                         className='overlay d-flex align-items-center justify-content-center'
                     >
-                        <FavouriteComponent/>
+                        <FavouriteComponent />
                     </div>
                 </div>
             ))}
