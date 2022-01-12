@@ -16,7 +16,6 @@ const App = () => {
         const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=8f0221d2`;
 
         const response = await fetch(url);
-
         const responseJson = await response.json();
 
         if (responseJson.Search) {
