@@ -8,6 +8,7 @@ import AddFavourites from './components/AddFavourites';
 import RemoveFavourites from './components/RemoveFavourites';
 
 const App = () => {
+
     const [movies, setMovies] = useState([]);
     const [favourites, setFavourites] = useState([]);
     const [searchValue, setSearchValue] = useState('');
